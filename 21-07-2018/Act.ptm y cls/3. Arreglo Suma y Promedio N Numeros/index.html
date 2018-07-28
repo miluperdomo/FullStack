@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arreglo</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = prompt ("ingrese un numero");
+		var arreglo = [];
+		for (var i = 0; i < num; i++) {
+			arreglo.push(
+			{
+				elem1: "string"+i,
+				elem2: "string"+i,
+				elem3: 2+i
+			}
+			);
+		}
+		var sum = 0;
+		var prom = 0;
+		for (var i = 0; i < num; i++) {
+			sum += arreglo[i]["elem3"];
+		}
+		prom = sum/num;
+		console.log("La sumatoria es: " +sum);
+		console.log("El promedio es: " +prom);
+	</script>
+</body>
+</html>
